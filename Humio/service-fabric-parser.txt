@@ -1,0 +1,4 @@
+ parseJson()
+ | @timestamp := parseTimestamp(field=timestamp)
+ | @display := format(format="%s | %s | %s | %s ", field=[providerName, payload.ID, payload.EventName, payload.Message])
+ | kvParse()

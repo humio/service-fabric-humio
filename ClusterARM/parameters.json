@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": ""
+        },
+        "clusterLocation": {
+            "value": "westeurope"
+        },
+        "computeLocation": {
+            "value": "westeurope"
+        },
+        "adminUserName": {
+            "value": ""
+        },
+        "nicName": {
+            "value": ""
+        },
+        "publicIPAddressName": {
+            "value": ""
+        },
+        "dnsName": {
+            "value": ""
+        },
+        "virtualNetworkName": {
+            "value": ""
+        },
+        "lbName": {
+            "value": ""
+        },
+        "lbIPName": {
+            "value": ""
+        },
+        "applicationDiagnosticsStorageAccountName": {
+            "value": ""
+        },
+        "supportLogStorageAccountName": {
+            "value": ""
+        },
+        "sourceVaultValue": {
+            "value": ""
+        },
+        "certificateUrlValue": {
+            "value": ""
+        },
+        "certificateThumbprint": {
+            "value": ""
+        },
+        "vmImageSku": {
+            "value": "Datacenter-Core-1803-with-Containers-smalldisk"
+        },
+        "vmImageOffer": {
+            "value": "WindowsServerSemiAnnual"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        },
+        "nt0fabricHttpAppPort": {
+            "value": 80
+        },
+        "clusterMonitor_artifactsLocation": {
+            "value": ""
+        }
+    }
+}

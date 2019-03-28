@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    {
+      "type": "ETW",
+      "sessionNamePrefix": "ClusterMonitor",
+      "cleanupOldSessions": true,
+      "reuseExistingSession": true,
+      "providers": [
+        {
+          "providerName": "Microsoft-ServiceFabric"
+        },
+        {
+          "providerName": "Microsoft-ServiceFabric-Actors"
+        },
+        {
+          "providerName": "Microsoft-ServiceFabric-Services"
+        }
+
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "ElasticSearch",
+      "serviceUri": "https://cloud.humio.com/api/v1/ingest/elastic-bulk",
+      "basicAuthenticationUserName": "",
+      "basicAuthenticationUserPassword": "notUsed"
+    }
+  ],
+  "schemaVersion": "2016-08-11",
+  "extensions": []
+}

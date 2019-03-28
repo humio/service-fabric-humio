@@ -1,0 +1,24 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - "D:\\SvcFab\\_App\\*\\work\\log\\*.log"
+  fields:
+    "type": "serilog-foobar"
+  fields_under_root: true
+  encoding: utf-8
+- type: log
+  enabled: true
+  paths:
+    - "D:\\SvcFab\\_App\\*\\*\\logs\\*"
+  fields:
+    "type": filebeat
+  fields_under_root: true
+  encoding: utf-8
+
+output.elasticsearch:
+  hosts: ["https://cloud.humio.com/api/v1/ingest/elastic-bulk"]
+  username: "<token>"
+  compression_level: 5
+  bulk_max_size: 200
+  worker: 1

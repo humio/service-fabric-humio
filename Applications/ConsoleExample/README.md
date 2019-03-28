@@ -1,0 +1,1 @@
+This .net core application demonstrates the usage of the [Serilog](https://serilog.net) library for structured event logging. The configuration is such that it plays nice with Humios built-in [Serilog Parser](https://docs.humio.com/parsers/built-in-parsers/serilog/).
